@@ -6,6 +6,7 @@ public class Kunde {
     private String film, fornavn, etternavn, telefonnr, epost;
     private int antall;
 
+    // Konstruktør for å opprette en Kunde med alle feltene
     public Kunde(String film, String fornavn, String etternavn, String telefonnr, String epost, int antall){
         this.film = film;
         this.fornavn = fornavn;
@@ -15,10 +16,14 @@ public class Kunde {
         this.antall = antall;
     }
 
+
+    // Den tomme konstruktøren tillater å lage en ny Kunde uten å gi den noen startverdier.
     public Kunde(){
 
     }
 
+
+    // Getter og setter metoder for hvert felt i Kunde-objektet
     public String getFilm() {
         return film;
     }
