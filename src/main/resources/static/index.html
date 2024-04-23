@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billetter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bestilling</h1>
+            <form class="form">
+                <div class="form-group">
+                    <select class="form-control" id="bestilling">
+                        <option selected disabled>Velg film her</option>
+                        <option id="Great-Warrior">Great Warrior</option>
+                        <option id="The-uncle">The uncle</option>
+                    </select>
+                    <label for="antall">Antall</label>
+                    <input type="text"class="form-control"id="antall">
+                    <span id="feilmelding_antall"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text"class="form-control"id="fornavn">
+                    <span id="feilmelding_fornavn"></span>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text"class="form-control"id="etternavn">
+                    <span id="feilmelding_etternavn"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnummer</label>
+                    <input type="text"class="form-control"id="telefonnr">
+                    <span id="feilmelding_telefonnr"></span>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text"class="form-control"id="epost">
+                    <span id="feilmelding_epost"></span>
+                </div>
+            </form>
+
+            <button type="button"class="btn btn-primary"onclick="Billetter()">Registrer</button>
+        </div>
+
+        <div class="col-md-8">
+            <h3>Alle billettene:</h3>
+
+            <div id="billettene" class="table-responsive"></div>
+            <button type="button"class="btn btn-danger"onclick="slettAlle()">Slett alle</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
