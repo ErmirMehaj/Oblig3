@@ -15,14 +15,19 @@ public class KundeController {
     @Autowired
      KundeRepository rep;
 
+    // POST-endepunkt for å lagre en ny kunde
     @PostMapping("/lagre")
     public void lagre(Kunde innKunde) {
         rep.lagreKunde(innKunde);
     }
+
+    // GET-endepunkt for å hente alle kunder
     @GetMapping("/hent")
     public List<Kunde>hentBilletter(){
         return rep.hentAlleKunder();
     }
+
+    // GET-endepunkt for å slette alle kunder
     @GetMapping("/slett")
     public void slettAlle(){
         rep.slettAlleKunder();
