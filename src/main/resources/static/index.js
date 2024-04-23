@@ -8,7 +8,6 @@ function Billetter() {
         telefonnr: $("#telefonnr").val(),
         epost: $("#epost").val(),
     }
-
     // Henter verdier fra input-feltene individuelt
     let antall = document.getElementById("antall").value;
     let fornavn = document.getElementById("fornavn").value;
